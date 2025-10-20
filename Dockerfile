@@ -32,4 +32,5 @@ COPY docker_entrypoint.sh /root/docker_entrypoint.sh
 RUN chmod +x /root/docker_entrypoint.sh
 
 # Standardbefehl zum Starten des Containers
-CMD ["/root/docker_entrypoint.sh"]
+ENTRYPOINT ["/root/docker_entrypoint.sh"]
+CMD ["bash"]
